@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: red;
+  }
+  33% {
+    background-color: yellow;
+  }
+  66% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: purple;
+  }
+}
+body {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  animation: colorChange 7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body #playButton {
+  width: calc(15vw + 15vh);
+  height: calc(15vw + 15vh);
+  cursor: pointer;
+}
+body #playButton:hover {
+  transform: scale(110%);
+}
+body #playButton:active {
+  transform: scale(90%);
+}
+body .duane {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: transform 60s;
+}/*# sourceMappingURL=style.css.map */
